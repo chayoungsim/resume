@@ -98,7 +98,7 @@ section h2{margin:4rem 0 1rem;padding:0;font-size: 3.2rem;font-weight: 500;color
 .history__design.open .cards{display: block;}
 .history__design.open .btn--toggle::after{transform: rotate(-90deg)}
 @media (max-width:765px) {
-    html{font-size: 2.1vw;}
+    html{font-size: 2.2vw;}
     header{padding:0}
     section{padding:4rem 2rem}
     .profile__wrap .info{width: 100%;}   

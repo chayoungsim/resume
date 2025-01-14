@@ -83,9 +83,11 @@ section h2{margin:4rem 0 1rem;padding:0;font-size: 3.2rem;font-weight: 500;color
 .portfolio__item ul{display: flex;flex-direction: column;gap:0.5rem;margin:0;padding:0}
 .portfolio__item ul>li{display: flex;gap:1rem}
 .portfolio__item .dt{width: 4rem;text-align: right;}
-.portfolio__item .dd{width: calc(100% - 4rem);}
-.portfolio__item .dd a{margin-left: 1rem;color:#888;display: inline-flex;align-items: center;word-break: break-all}
-.portfolio__item .dd a::after{content: '';display: inline-block;width:2rem;height:2rem;background: url(../images/box-arrow-right.svg) no-repeat 50% 50%;margin-left: 0.5rem;background-size: cover;}
+.portfolio__item .dd{width: calc(100% - 4rem);display: flex;gap:1rem}
+.portfolio__item .dd a{color:#888;display: inline-flex;align-items: center;word-break: break-all;}
+.portfolio__item .dd a::after{content: '';display: inline-block;width:2rem;height:2rem;background: url(../images/box-arrow-right.svg) no-repeat 50% 50%;margin-left: 0.5rem;background-size: cover;flex-shrink: 0;}
+.portfolio__item .dd .com{flex-shrink:0;}
+.portfolio__item .dd .info{font-style: normal;font-size:0.875em}
 .portfolio__wrap.open{background-color: #f8f8f8;}
 .portfolio__wrap.open .portfolio__items{display: block;}
 .portfolio__wrap.open .btn--toggle::after{transform: rotate(-90deg)}

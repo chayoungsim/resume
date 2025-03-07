@@ -28,10 +28,16 @@ function photoSwiper(){
 
   window.addEventListener("load", function(){    
     photoSwiper();
-    const toggle1 = document.querySelector('.portfolio__wrap .btn--toggle');
-    toggle1.addEventListener('click',function(){
-        toggleClass(toggle1,'open')
-    });
+
+    const toggles = document.querySelectorAll('.portfolio__wrap .btn--toggle');
+
+     toggles.forEach((toggle) =>{
+        toggle.addEventListener('click',function(){
+          toggleClass(toggle,'open')
+       });
+     })
+
+    
     const toggle2 = document.querySelector('.history__design .btn--toggle');
     toggle2.addEventListener('click',function(){
         toggleClass(toggle2,'open')
